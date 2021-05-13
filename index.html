@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+			function play(){
+		var Ifr=document.getElementById('ifr')
+		var url='https://api.oick.cn/txt/apiz.php?text=@@@@@&spd=1'
+
+		console.log(url.replace('@@@@@','好的')+'&t='+new Date().getTime())
+		Ifr.src=url.replace('@@@@@','好的')+'&t='+new Date().getTime()
+
+	}
+
+	</script>
+</head>
+<body>
+ <iframe id="ifr" src=""></iframe>
+
+ <div id="content">
+ 	<button onclick="play()">好</button>
+ </div>
+
+</body>
+</html>
