@@ -9,7 +9,7 @@
 
 		function play(text){
 			var Ifr=document.getElementById('audios')
-			var url='http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=4&text=@@@@@'
+			var url='http://qqlykm.cn/api/txt/apiz.php?text=@@@@&spd=1'
 			Ifr.src=url.replace('@@@@@',text||content)+'&t='+new Date().getTime()
 			document.getElementById('pause').style.display='block'
 			document.getElementById('play').style.display='none'
