@@ -9,7 +9,8 @@
 	var content='抗日战争时期，有一个小朋友叫雨来，他住在芦花村。雨来非常喜欢游泳，水性很好。一天，鬼子来‘扫荡’了，雨来一个人在家。突然，交通员李大叔闯了进来，雨来把他藏在了缸下面的地洞里。雨来刚跑出去，敌人就来了，他们把雨来抓了起来。一个扁鼻子军官问他：“你看见一个人跑进来没有？” 雨来说没看见。扁鼻子军官，抓着雨来的耳朵向两边拉，在雨来的脸上打了两巴掌，雨来疼极了，坚持说没看见。扁鼻子军官气极了，嗷嗷叫着：“死啦死啦的，拉出去，枪毙！” 河沿上响起了枪声，乡亲们难过极了，大家都认为小雨来牺牲了。突然，雨来从河里露出了小脑袋。原来枪响之前，雨来趁敌人不防备一头扎进水里，因此雨来没有死。小朋友们，这就是宁死不屈、机智勇敢的抗日小英雄---雨来！'
 	function play(text){
 		var Ifr=document.getElementById('audios')
-		var url='https://api.oick.cn/txt/apiz.php?text=@@@@@&spd=1'
+
+		var url='http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=4&text=@@@@@'
 		Ifr.src=url.replace('@@@@@',text||content)+'&t='+new Date().getTime()
    		Ifr.play()
 	}
@@ -32,13 +33,13 @@
 
 	</script>
 	<style>
-				body{
+		body{
 			background: rgba(204,232,207);
 		}
 		button{
+			padding: 0;
 			font-size:18px;
 			border:none;
-padding:0;
 			background: none;
 			margin-bottom:5px;
 		}
