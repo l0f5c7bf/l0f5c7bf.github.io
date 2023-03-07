@@ -61,6 +61,6 @@
         var type = getQueryVariable('type')
 
         document.getElementById('video').className = 'video' + type
-        document.getElementById('iframe').src =url
+        document.getElementById('iframe').src =decodeURIComponent(url)
     </script>
 </html>
